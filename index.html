@@ -11,10 +11,11 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!-- Bootstrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/1faef74c07.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-        rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&display=swap" rel="stylesheet">
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -25,109 +26,168 @@
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#page-top"><img src="https://i.imgur.com/OFG96fH.png" height="30px"
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2 " id="mainNav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#page-top"><img class="logo" src="images/logo.png" 
                     alt=""></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#about">學習經歷</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">擅長軟體</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">作品展示</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">聯繫方式</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">專業技能</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">作品集</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">聯絡資訊</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead">
-        <div class="container px-4 px-lg-5 h-100">
-            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-left">
-                <div class="col-lg-8 align-self-end">
-                    <h1 class="text-white font-weight-bold wow bounceInLeft">HELLO <span>!</span><br> I<span>'</span>M
-                        WENG<br> HAN WEI
+    <header class="masthead page-section-md">
+        <div class="container px-lg-5 px-md-2 container-sm">
+            <div class="row gx-lg-5 h-100 align-items-center justify-content-center text-left">
+                <div class="col-lg-6 col-md-6 col-sm-10 col-8">
+                    <h1 class="text-color wow bounceInLeft">HELLO <span>!</span><br> My Name is Alice
                         <span>.</span>
                     </h1>
-                    <hr class="divider" />
+                    <div class="my-3 align-self-baseline">
+                        <p class="text-color wow bounceInLeft">對UIUX充滿熱忱與想法，
+                            <br>在美感的領域注重整體調性與細緻度，<br>挑戰多元、持續精進成長。</p>
+                        <!-- <a class="btn btn-primary btn-xl" href="#about">Find Out More</a> -->
+                    </div>
                 </div>
-                <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 mb-5 wow bounceInLeft">您好
-                        我是翁菡蔚<br>畢業於銘傳大學商品設計學系<br><br>熟悉 Figma 與 Adobe XD 軟體操作介面設計<br>了解基礎 HTML 和 CSS 網頁語法</p>
-                    <!-- <a class="btn btn-primary btn-xl" href="#about">Find Out More</a> -->
+                <div class="col-lg-4 col-md-6 col-sm-10 col-7 position-relative ">
+                    <img class="img-fluid wow bounceInRight" src="images/關於我.png" alt="">
+                    <img class="point wow bounceInRight" src="images/point.png" alt="">
                 </div>
             </div>
         </div>
     </header>
     <!-- About-->
-    <section class="page-section-md bg-white" id="about">
+    <section class="page-section-md" id="about">
         <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="text-center mt-0 wow bounceInUp">學習經歷</h2>
-                    <hr class="divider" />
-                    <p class="text-start text-body mb-4 p_text">
-                        曾在ADK太一廣告公司擔任設計實習生，擁有平面設計等相關經驗，另外在台美壓克力公司研發收納性質的新產品，實際參與工廠生產加工流程。<br><br>想了解更多貼近使用者的設計，自半年起便以線上課程方式學習UIUX設計領域所需能力，使用Figma與Adobe
-                        XD從概念發想到實際操作，完成App與Web的核心功能設計與原型製作，並學習基礎HTML與CSS網頁語法以好銜接未來與工程師順利進行溝通，期望自身累積的實務經驗與專業能力，讓本人有幸能為貴公司服務。
+            <div class="row gx-4 gx-lg-5 justify-content-center wow bounceInUp">
+                <div class="col-lg-8 col-md-8">
+                    <div class="row flex-nowrap justify-content-center my-4">
+                        <img class="star" src="images/star.svg"></img>
+                        <h5 class="w-auto">善於團隊溝通、執行專案盡責細心</h5>
+                    </div>
+                    <p class="text-start text-body py-2">
+                        在職期間累積對視覺設計的美感敏銳度，且注重版面的整體調性與細節細緻度，在介面設計領域擁有極大的熱忱與想法。執行各類專案過程中，瞭解需求樂於接受挑戰，耐心與不同部門溝通合作，對於時間有正確的認知觀念，能讓專案在期限內有效率的完成，並在產品上線後持續優化改善，建立出良好的用戶體驗網站。
+                    </p>
+                </div>
+                <div class="col-lg-8 col-md-8">
+                    <div class="row flex-nowrap justify-content-center my-4">
+                        <img class="star" src="images/star.svg"></img>
+                        <h5 class="w-auto">擁有自學能力、不斷吸取新知</h5>
+                    </div>
+                    <p class="text-start text-body py-2">
+                        在空閒與通勤時間透過線上學習平台和Podcast持續精進UIUX技能，也積極參與UI/UX社群，向他人發問吸收設計新知，社友遭遇難題適時分享自己的解決經驗。
                     </p>
                 </div>
             </div>
         </div>
     </section>
     <!-- Skill-->
-    <section class="page-section-md " id="services">
-        <div class="bg">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0 wow bounceInUp">擅長軟體</h2>
-                <hr class="divider" />
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-4 col-md-6 text-center  ">
-                        <div class="mt-5">
-                            <div class="mb-2"><img class="skill_icon" src="images/ai.png" alt=""></div>
-                            <h3 class="h4 mb-2">Adobe Illustrator</h3>
-                            <p class="text-muted text-sm-start mb-0">具備設計Logo、Icon、插圖等向量圖像及圖文排版設計能力， 擁有戶外廣告海報、產品包裝等經驗。
-                            </p>
+    <section class="page-section-md bg" id="services">
+            <div class="container">
+                <div class="row flex-nowrap justify-content-center align-items-center mb-5">
+                    <img class="triangle" src="images/triangle.svg"></img>
+                    <h2 class="w-auto px-3 text-white">專業技能</h2>
+                </div>
+                <h4 class="text-primary my-sm-3">UI/UX Design</h4>
+                <div class="row">
+                    <div class="row col-lg-3 col-sm-4 col-6 skill-item">
+                        <div class="text-start">
+                            <div class="row flex-nowrap align-items-cente">
+                                <img class="skill" src="images/skill.svg" alt="">
+                                <p class="text-white ps-2">Figma</p>
+                            </div>    
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><img class="skill_icon" src="images/ps.png" alt=""></div>
-                            <h3 class="h4 mb-2">Adobe Photoshop</h3>
-                            <p class="text-muted text-sm-start mb-0">熟悉圖像或產品的去背合成，製作過商品Mockup、產品合成海報。</p>
+                    <div class="row col-lg-3 col-sm-4 col-6 skill-item">
+                        <div class="text-start">
+                            <div class="row flex-nowrap align-items-center">
+                                <img class="skill" src="images/skill.svg" alt="">
+                                <p class="text-white ps-2">Adobe XD</p>
+                            </div>    
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><img class="skill_icon" src="images/Adobe_XD.png" alt=""></div>
-                            <h3 class="h4 mb-2">Adobe XD</h3>
-                            <p class="text-muted text-sm-start mb-0">了解基礎介面與使用者體驗設計，有能力做出符合規範、直覺、美觀好閱讀的介面。</p>
+                    <div class="row col-lg-3 col-sm-4 col-6 skill-item">
+                        <div class="text-start">
+                            <div class="row flex-nowrap align-items-center">
+                                <img class="skill" src="images/skill.svg" alt="">
+                                <p class="text-white ps-2">Design System</p>
+                            </div>    
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><img class="skill_icon" src="images/figma.png" alt=""></div>
-                            <h3 class="h4 mb-2">Figma</h3>
-                            <p class="text-muted text-sm-start mb-0">掌握基礎App＆Web的UI介面設計，從Wireframe/ Mockup/ Prototype/
-                                User
-                                Flow皆有操作與實作經驗。</p>
+                     <div class="row col-lg-3 col-sm-4 col-6 skill-item">
+                        <div class="text-start">
+                            <div class="row flex-nowrap align-items-center">
+                                <img class="skill" src="images/skill.svg" alt="">
+                                <p class="text-white ps-2">User flow</p>
+                            </div>    
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><img class="skill_icon" src="images/html.png" alt=""></div>
-                            <h3 class="h4 mb-2">HTML</h3>
-                            <p class="text-muted text-sm-start mb-0">具備架設網站基本知識、網頁結構程式撰寫，能夠架設個人網站。</p>
+                    <div class="row col-lg-3 col-sm-4 col-6 skill-item">
+                        <div class="text-start">
+                            <div class="row flex-nowrap align-items-center">
+                                <img class="skill" src="images/skill.svg" alt="">
+                                <p class="text-white ps-2">Wireframe</p>
+                            </div>    
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><img class="skill_icon" src="images/css.png" alt=""></div>
-                            <h3 class="h4 mb-2">CSS</h3>
-                            <p class="text-muted text-sm-start mb-0">
-                                能運用動畫效果搭配Javascript插件豐富網頁互動體驗，並使用Boostrap等框架製作RWD網站。
-                            </p>
+                    <div class="row col-lg-3 col-sm-4 col-6 skill-item">
+                        <div class="text-start">
+                            <div class="row flex-nowrap align-items-center">
+                                <img class="skill" src="images/skill.svg" alt="">
+                                <p class="text-white ps-2">Prototyping</p>
+                            </div>    
+                        </div>
+                    </div>
+                    <h4 class="text-primary my-sm-3">Graphic design</h4>
+                    <div class="row col-lg-3 col-sm-4 col-6 skill-item">
+                        <div class="text-start">
+                            <div class="row flex-nowrap align-items-center">
+                                <img class="skill" src="images/skill.svg" alt="">
+                                <p class="text-white ps-2">Illustrator</p>
+                            </div>    
+                        </div>
+                    </div>
+                     <div class="row col-lg-3 col-sm-4 col-6 skill-item">
+                        <div class="text-start">
+                            <div class="row flex-nowrap align-items-center">
+                                <img class="skill" src="images/skill.svg" alt="">
+                                <p class="text-white ps-2">Photoshop</p>
+                            </div>    
+                        </div>
+                    </div>
+                    <h4 class="text-primary my-sm-3">Programming</h4>
+                    <div class="row col-lg-3 col-sm-4 col-6 skill-item">
+                        <div class="text-start">
+                            <div class="my-3 row flex-nowrap align-items-center">
+                                <img class="skill" src="images/skill.svg" alt="">
+                                <p class="text-white ps-2">HTML</p>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="row col-lg-3 col-sm-4 col-6 skill-item">
+                        <div class="text-start">
+                            <div class="my-3 row flex-nowrap align-items-center">
+                                <img class="skill" src="images/skill.svg" alt="">
+                                <p class="text-white ps-2">CSS</p>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="row col-lg-3 col-sm-4 col-6 skill-item">
+                        <div class="text-start">
+                            <div class="my-3 row flex-nowrap align-items-center">
+                                <img class="skill" src="images/skill.svg" alt="">
+                                <p class="text-white ps-2">Bootstrap</p>
+                            </div>    
                         </div>
                     </div>
                 </div>
@@ -138,14 +198,88 @@
     <!-- Portfolio -->
     <section class="page-section-md" id="portfolio">
         <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0 wow bounceInUp">作品展示</h2>
-            <hr class="divider" />
+            <div class="row flex-nowrap justify-content-center align-items-center mb-5">
+                <img class="semicircle" src="images/semicircle.svg" alt="">
+                <h2 class="w-auto px-3">作品集</h2>
+            </div>
             <div class="work-list">
                 <div class="work-item wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-md-6 col-sm-12 order-md-2">
                             <div class="imgbox">
-                                <a href="https://www.behance.net/gallery/129577927/Paper-Paper-App-Design"
+                                <a href="https://www.behance.net/gallery/167491287/Breakfast-Ordering-App-Design"
+                                    title="BREAKFAST ORDERING">
+                                    <div class="imgbox_inner">
+                                        <div class="image" style="background-image:url('images/早餐點餐系統APP-cover.jpg') ;"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 pe-md-4 pe-lg-0 pt-md-0 pt-3">
+                            <div class="px-lg-5">
+                                <h3 class="work-item_title">BREAKFAST ORDERING</h3>
+                                <h5 class="work-item_type">App Design</h5>
+                                <p class="work-item_intro">增加桌邊點餐功能，方便內用顧客可以更快速輕鬆點餐，按照品牌色系設計頁面。</p>
+                                <a href="https://www.behance.net/gallery/167491287/Breakfast-Ordering-App-Design" 
+                                   class="btn btn--secondary btn--md mt-sm-5 mt-3" 
+                                   target="_blank">
+                                        <img class="star mx-2" src="images/btn.svg" alt="">
+                                    Laern More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="imgbox">
+                                <a href="https://www.behance.net/gallery/167448959/Pet-Visit-App-Design"
+                                    title="PET VISIT">
+                                    <div class="imgbox_inner">
+                                        <div class="image" style="background-image:url('images/寵物醫療服務APP-cover.jpg') ;"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 ps-md-4 ps-lg-0 pt-md-0 pt-3">
+                            <div class="px-lg-5">
+                                <h3 class="work-item_title ">PET VISIT</h3>
+                                <h5 class="work-item_type">App Design</h5>
+                                <p class="work-item_intro">提供寵物視訊看診服務，主人可在線上挑選合適的獸醫，進行約診及專業諮詢，視訊後也可看到寵物相關藥品服用資訊。</p>
+                                <a href="https://www.behance.net/gallery/167448959/Pet-Visit-App-Design" class="btn btn--secondary btn--md mt-sm-5 mt-3" target="_blank"><img class="star mx-2" src="images/btn.svg" alt="">Laern More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-sm-12 order-md-2">
+                            <div class="imgbox">
+                                <a href="https://garage.sicar.com.tw/"
+                                    title="SiCAR">
+                                    <div class="imgbox_inner">
+                                        <div class="image" style="background-image:url('images/SiCAR.jpg') ;"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 pe-md-4 pe-lg-0 pt-md-0 pt-3">
+                            <div class="px-lg-5">
+                                <h3 class="work-item_title">SiCAR</h3>
+                                <h5 class="work-item_type">Website Design</h5>
+                                <p class="work-item_intro">
+                                    全新智能車用社群平台網站，在這裡可獲得有關汽車的第一手消息，甚至是尋找未來的夢想車，為車友量身打造專屬的空間，協助車主解決愛車的大小事。</p>
+                                <a href="https://garage.sicar.com.tw/" class="btn btn--secondary btn--md mt-sm-5 mt-3" target="_blank"><img class="star mx-2" src="images/btn.svg" alt="">Laern More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-sm-12 order-md-2">
+                            <div class="imgbox">
+                                <a href="https://www.behance.net/gallery/167491287/Breakfast-Ordering-App-Design"
                                     title="Paper App design">
                                     <div class="imgbox_inner">
                                         <div class="image" style="background-image:url('images/專案封面-1.jpg') ;"></div>
@@ -153,43 +287,42 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="work-item_text ">
-                                <h3 class="work-item_title ">Paper App Design<br> UX/UI Case Study</h3>
+                        <div class="col-md-6 col-sm-12 order-md-2 ps-md-4 ps-lg-0 pt-md-0 pt-3">
+                            <div class="px-lg-5">
+                                <h3 class="work-item_title">PAPER INSTRUMENTS</h3>
+                                <h5 class="work-item_type">App Design</h5>
                                 <p class="work-item_intro">
-                                    翻轉傳統的填鴨式教育，啟發小朋友潛在的邏輯美學能力，透過APP更方便小朋友學習線上課程，家長也能陪同學習，增進親子感情交流，讓學習體驗更順暢。</p>
-                                <a href="https://www.behance.net/gallery/129577927/Paper-Paper-App-Design"
-                                    class="text-btn">Show project</a>
+                                    提供給現代小朋友學習的美學教具，為孩子建立起邏輯思考的能力，家長可以在APP中選購合適的教具，讓小朋友可以跟著課程進度自主學習。</p>
+                                <a href="https://www.behance.net/gallery/129577927/Paper-Paper-App-Design" class="btn btn--secondary btn--md mt-sm-5 mt-3" target="_blank"><img class="star mx-2" src="images/btn.svg" alt="">Laern More</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="work-item wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-sm-12 order-md-2">
                             <div class="imgbox">
                                 <a href="https://www.behance.net/gallery/129525807/A-HANDMADE-SHOP-Website-Design"
-                                    title="A HANDMADE SHOP">
+                                    title="BREAKFAST ORDERING">
                                     <div class="imgbox_inner">
                                         <div class="image" style="background-image:url('images/專案封面-2.jpg') ;"></div>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="work-item_text">
-                                <h3 class="work-item_title ">A HANDMADE SHOP<br>Website Design</h3>
-                                <p class="work-item_intro">A HANDMADE SHOP
-                                    是專門販售手工商品的線上購物網站，消費者可以依據商品分類輕鬆找到合適的商品，並在結帳時才需要註冊會員，簡單化訂單結帳流程，提供消費者最自在的網購消費體驗。</p>
-                                <a href="https://www.behance.net/gallery/129525807/A-HANDMADE-SHOP-Website-Design"
-                                    class="text-btn">Show project</a>
+                        <div class="col-md-6 col-sm-12 pe-md-4 pe-lg-0 pt-md-0 pt-3">
+                            <div class="px-lg-5">
+                                <h3 class="work-item_title ">A HANDMADE SHOP</h3>
+                                <h5 class="work-item_type">Website Design</h5>
+                                <p class="work-item_intro">販售手工商品的線上購物網站，消費者可以依據商品分類輕鬆找到合適的商品，並在結帳時才需要註冊會員，簡單化訂單結帳流程，提供消費者最自在的網購消費體驗。</p>
+                                <a href="https://www.behance.net/gallery/129525807/A-HANDMADE-SHOP-Website-Design" class="btn btn--secondary btn--md mt-sm-5 mt-3" target="_blank"><img class="star mx-2" src="images/btn.svg" alt="">Laern More</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="work-item wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 order-md-2">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-sm-12">
                             <div class="imgbox">
                                 <a href="https://www.behance.net/gallery/131180641/Onboarding-Design"
                                     title="Onboarding Design">
@@ -199,23 +332,19 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="work-item_text ">
+                        <div class="col-md-6 col-sm-12 ps-md-4 ps-lg-0 pt-md-0 pt-3">
+                            <div class="px-lg-5">
                                 <h3 class="work-item_title ">Onboarding Screen Design</h3>
+                                <h5 class="work-item_type">App Design</h5>
                                 <p class="work-item_intro">延伸Paper
                                     App專案內容，以點線面的元素構成幾何圖形，並搭配商品照片創造出簡單有趣的介紹畫面，讓消費者在無形當中擁有深刻印象。</p>
-                                <a href="https://www.behance.net/gallery/131180641/Onboarding-Design"
-                                    class="text-btn">Show project</a>
+                                <a href="https://www.behance.net/gallery/131180641/Onboarding-Design" class="btn btn--secondary btn--md mt-sm-5 mt-3" target="_blank"><img class="star mx-2" src="images/btn.svg" alt="">Laern More</a>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="btn-group btn-group--center">
-                <a href="https://www.behance.net/alice2211958fb" class="btn btn--secondary btn--md">More project</a>
-            </div>
-
-
         </div>
     </section>
 
@@ -227,34 +356,30 @@
         </div>
     </section> -->
     <!-- Contact-->
-    <section class="page-section-md bg-dark" id="contact">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="text-center mt-0 text-white wow bounceInUp">聯絡資訊</h2>
-                    <hr class="divider" />
-                    <div class="emil-item wow fadeInUp" data-wow-delay="0.5s">
-                        <i class="bi bi-envelope-fill fs-1 icon-color"></i>
-                        <div class="email-info">
-                            <a href="mailTo:alice22119@gmail.com" class="icon-text">alice22119@gmail.com</a>
-                        </div>
+    <section class="page-section-md bg-dark position-relative" id="contact">
+        <div class="container">
+            <div class="row gx-lg-5 justify-content-center">
+                <div class="text-center">
+                    <div class="row flex-nowrap justify-content-center align-items-center mb-5">
+                        <img class="square mx-2" src="images/square.svg"></img>
+                        <h2 class="w-auto text-white">聯絡資訊</h2>
                     </div>
-                    <div class="phone-item wow fadeInUp" data-wow-delay="0.9s">
-                        <i class="bi bi-telephone-fill fs-2 icon-color"></i>
-                        <div class="info__phone">
-                            <a href="tel:0989123456" class="icon-text">0932-209-731</a>
-                        </div>
+                    <div class="row justify-content-center align-items-center emil-item flex-nowrap my-4">
+                        <a href="mailTo:alice22119@gmail.com" class="icon-text w-auto">
+                            <i class="fa-solid fa-envelope fa-xl py-2" style="color: #ffffff;"></i>
+                            alice22119@gmail.com</a>
                     </div>
+                    <div class="row justify-content-center align-items-center emil-item flex-nowrap my-4">
+                        <a href="tel:0989123456" class="icon-text w-auto">
+                            <i class="fa-solid fa-phone fa-xl" style="color: #ffffff;"></i>
+                            0932-209-731</a>
+                    </div>
+                    <p class="text-center text-copyright mt-5" style="font-size: 12px;">Copyright © Created and Designed by Alice. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
+        <img class="door d-none d-md-inline-block" src="images/door.svg" alt="">
     </section>
-    <!-- Footer-->
-    <footer class="bg-light py-5">
-        <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted">Copyright &copy; 2021 - WENG HAN WEI</div>
-        </div>
-    </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- SimpleLightbox plugin JS-->
