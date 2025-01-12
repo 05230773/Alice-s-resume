@@ -11345,6 +11345,7 @@ header.masthead h1, header.masthead .h1 {
   header.masthead {
     min-height: 40rem;
     padding-bottom: 0;
+    height: auto;
   }
   header.masthead p {
     font-size: 16px;
@@ -11492,6 +11493,16 @@ header.masthead h1, header.masthead .h1 {
   background-size: cover;
   background-position: center; */
 }
+.image_content{
+  display: block;
+}
+@media (max-width:768px) {
+  .image_content{
+    display: flex;
+    justify-content:center
+  }
+}
+
 /* $point */
 img.point{
   position: absolute;
@@ -11517,19 +11528,19 @@ img.point{
     bottom: -40px;
   }
 }
+
 @media (max-width:768px) {
   img.point{
     width: 100px;
     height: inherit;
-    left: -60px;
-    bottom: -60px;
+    left: 10px;
+    bottom: -20px;
   }
 }
-@media (max-width:768px) {
+
+@media (max-width:425px) {
   img.point{
-    width: 100px;
-    height: inherit;
-    left: -40px;
+    left: -30px;
     bottom: -20px;
   }
 }
